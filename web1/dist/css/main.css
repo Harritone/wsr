@@ -81,7 +81,7 @@ html {
 
 .showcase {
   color: #fff;
-  background: url("../img/showcase.png") no-repeat center center/cover;
+  background-color: #333;
   padding: 3.2rem;
   position: relative;
   top: 0;
@@ -89,12 +89,12 @@ html {
   .showcase::before {
     content: "";
     position: absolute;
-    background-color: #333;
+    background: url("../img/showcase.png") no-repeat center center/cover;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.4; }
+    opacity: 0.8; }
   .showcase__container {
     max-width: 104rem;
     padding-top: 10rem 0;
@@ -123,7 +123,9 @@ html {
 
 .navbar {
   background-color: #4a3afe;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  position: sticky;
+  top: 0; }
   .navbar__container {
     display: flex;
     justify-content: space-between; }
@@ -131,6 +133,14 @@ html {
     margin-right: 2rem; }
   .navbar__right--list li:not(:last-child) {
     margin-right: 2rem; }
+
+.carousel {
+  background: url("../img/bush.png");
+  padding: 5rem 0; }
+  .carousel__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
 
 .btn {
   display: inline-block;
@@ -175,3 +185,9 @@ html {
         color: #000; }
       .dropdown:hover .dropdown__list--item:hover {
         background-color: #f8e535; }
+
+.arrow {
+  font-size: 10rem;
+  color: #fff;
+  opacity: 0.7;
+  cursor: pointer; }
