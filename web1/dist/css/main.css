@@ -9,6 +9,9 @@ p {
   font-size: 1.6rem;
   color: #333; }
 
+ul {
+  list-style: none; }
+
 a {
   text-decoration: none;
   color: #000; }
@@ -81,16 +84,17 @@ html {
   background: url("../img/showcase.png") no-repeat center center/cover;
   padding: 3.2rem;
   position: relative;
+  top: 0;
   height: 68.3rem; }
   .showcase::before {
     content: "";
-    background-color: #333;
     position: absolute;
+    background-color: #333;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3; }
+    opacity: 0.4; }
   .showcase__container {
     max-width: 104rem;
     padding-top: 10rem 0;
@@ -117,6 +121,17 @@ html {
       display: block;
       width: 17rem; }
 
+.navbar {
+  background-color: #4a3afe;
+  padding: 2rem 0; }
+  .navbar__container {
+    display: flex;
+    justify-content: space-between; }
+  .navbar__left--list li {
+    margin-right: 2rem; }
+  .navbar__right--list li:not(:last-child) {
+    margin-right: 2rem; }
+
 .btn {
   display: inline-block;
   padding: 1.2rem 1.6rem;
@@ -128,3 +143,35 @@ html {
     color: 333; }
     .btn-primary:hover {
       opacity: 0.8; }
+  .btn-nav {
+    border: 1px #fff solid;
+    color: #fff;
+    padding: 1rem; }
+    .btn-nav:hover {
+      border-color: #f8e535; }
+    .btn-nav a {
+      color: #fff; }
+
+.dropdown {
+  cursor: pointer;
+  position: relative; }
+  .dropdown__list {
+    display: none;
+    background-color: #fff;
+    color: #000; }
+  .dropdown:hover .dropdown__list {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 20rem;
+    margin-top: 1.2rem; }
+    .dropdown:hover .dropdown__list--item {
+      padding: 1.5rem 2rem;
+      background-color: #fff;
+      color: #000;
+      display: block;
+      width: 100%; }
+      .dropdown:hover .dropdown__list--item a {
+        color: #000; }
+      .dropdown:hover .dropdown__list--item:hover {
+        background-color: #f8e535; }
