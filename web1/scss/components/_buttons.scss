@@ -1,0 +1,47 @@
+.btn {
+  display: inline-block;
+  padding: 1.2rem 1.6rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    background-color: $color-primary;
+    color: 333;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &-tertiary {
+    background-color: $color-tertiary;
+    color: #fff;
+    padding: 5px 10px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &-nav,
+  &-form {
+    border: 1px #fff solid !important;
+    color: #fff;
+    padding: 1rem;
+    background-color: $color-nav;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-primary !important;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &-form {
+    background-color: $color-form !important;
+  }
+}

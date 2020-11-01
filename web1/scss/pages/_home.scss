@@ -1,0 +1,284 @@
+// Navigation
+.header {
+  background-color: #4a3afe;
+  // height: 10rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr);
+    align-items: center;
+    padding: 2.7rem 0;
+  }
+
+  &__left {
+    justify-self: left;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    grid-gap: 6.5rem;
+  }
+
+  &__center {
+    justify-self: center;
+    &--phone {
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  &__social {
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & a {
+      margin-left: 4.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.6rem;
+      height: 4.6rem;
+      border: 2px solid $color-secondary;
+      border-radius: 50%;
+      background-color: $color-primary;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-tertiary;
+      }
+    }
+
+    & i {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+// Showcase
+
+.showcase {
+  color: #fff;
+  background-color: #333;
+  padding: 3.2rem;
+  position: relative;
+  top: 0;
+  height: 68.3rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/showcase.png") no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+
+  &__container {
+    max-width: 104rem;
+    padding-top: 10rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    // margin-top: 7rem;
+    z-index: 5;
+
+    h1 {
+      grid-column: 1 / span 3;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &--text {
+      color: #fff;
+      margin-top: 3rem;
+      display: block;
+      width: 17rem;
+    }
+  }
+}
+
+// Navigation
+
+.navbar {
+  background-color: $color-nav;
+  padding: 2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left--list li {
+    margin-right: 2rem;
+  }
+
+  &__right--list li:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+// carousel
+
+.carousel {
+  background: url("../img/bush.png");
+  padding: 5rem 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+// Request section
+.request {
+  background-color: #333;
+  position: relative;
+  padding: 26.2rem 0;
+  height: 100rem;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/form-bg-big.png") no-repeat top center / cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  &__container {
+    max-width: 120rem;
+    margin: auto;
+    display: flex;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    z-index: 2;
+    margin-top: 3rem;
+  }
+
+  &__form {
+    background-color: $color-form;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2rem;
+    height: 100%;
+
+    label {
+      display: block;
+      font-size: 1.6rem;
+      margin-bottom: 7px;
+    }
+
+    input {
+      width: 100%;
+      padding: 1rem;
+      background-color: #008ece;
+      font-size: 1.6rem;
+      color: #fff;
+      border: 1px solid #fff;
+
+      &:active,
+      &:focus {
+        border: 1px solid $color-primary;
+      }
+    }
+    input[type="email"] {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__article {
+    width: 70rem;
+    height: 100%;
+    justify-self: end;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .btn {
+      float: right;
+    }
+  }
+}
+
+// Courses section
+
+.courses {
+  height: 60rem;
+  background: url("../img/bush.png");
+
+  &__container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12rem;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+// Map
+.map {
+  iframe {
+    width: 100%;
+    height: 66rem;
+  }
+}
+
+// Footer
+.footer {
+  background-color: $color-nav;
+  padding: 1rem 0;
+
+  &__container {
+    max-width: 90rem;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__address,
+  &__copy {
+    font-size: 1.6rem;
+  }
+  &__form {
+    input {
+      padding: 5px;
+      font-size: 1.6rem;
+    }
+  }
+}
