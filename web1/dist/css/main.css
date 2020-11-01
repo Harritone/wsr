@@ -6,9 +6,7 @@ body {
   box-sizing: border-box; }
 
 p {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 2rem; }
+  font-size: 1.6rem; }
 
 ul {
   list-style: none; }
@@ -200,7 +198,8 @@ html {
       background-color: #008ece;
       font-size: 1.6rem;
       color: #fff;
-      border: 1px solid #fff; }
+      border: 1px solid #fff;
+      outline: none; }
       .request__form input:active, .request__form input:focus {
         border: 1px solid #f8e535; }
     .request__form input[type="email"] {
@@ -280,28 +279,39 @@ html {
     background-color: #00b0ff !important; }
 
 .dropdown {
-  cursor: pointer;
+  width: 15rem;
   position: relative; }
-  .dropdown__list {
+  .dropdown__trigger {
+    cursor: pointer;
+    position: relative; }
+    .dropdown__trigger::after {
+      content: ">";
+      display: inline-block;
+      position: absolute;
+      right: 0.5rem;
+      transform: rotate(90deg) scale(0.5, 1);
+      font-weight: bold;
+      transition: transform 0.3s; }
+    .dropdown__trigger.active::after {
+      transform: rotate(-90deg) scale(0.5, 1); }
+  .dropdown__content {
     display: none;
-    background-color: #fff;
-    color: #000; }
-  .dropdown:hover .dropdown__list {
-    display: block;
     position: absolute;
     left: 0;
     width: 20rem;
     margin-top: 1.2rem; }
-    .dropdown:hover .dropdown__list--item {
-      padding: 1.5rem 2rem;
-      background-color: #fff;
-      color: #000;
-      display: block;
-      width: 100%; }
-      .dropdown:hover .dropdown__list--item a {
-        color: #000; }
-      .dropdown:hover .dropdown__list--item:hover {
-        background-color: #f8e535; }
+    .dropdown__content.active {
+      display: block; }
+  .dropdown__list--item {
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    width: 100%; }
+    .dropdown__list--item a {
+      color: #000; }
+    .dropdown__list--item:hover {
+      background-color: #f8e535; }
 
 .arrow {
   font-size: 10rem;
