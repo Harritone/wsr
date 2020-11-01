@@ -70,7 +70,9 @@ html {
   .header__center {
     justify-self: center; }
     .header__center--phone {
-      text-align: center; }
+      text-align: center;
+      font-size: 2rem;
+      color: #fff; }
   .header__social {
     height: 100%;
     width: 100%;
@@ -224,16 +226,43 @@ html {
     justify-items: center;
     align-items: center; }
 
+.map iframe {
+  width: 100%;
+  height: 66rem; }
+
+.footer {
+  background-color: #4a3afe;
+  padding: 1rem 0; }
+  .footer__container {
+    max-width: 90rem;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__address, .footer__copy {
+    font-size: 1.6rem; }
+  .footer__form input {
+    padding: 5px;
+    font-size: 1.6rem; }
+
 .btn {
   display: inline-block;
   padding: 1.2rem 1.6rem;
   border-radius: 4px;
   font-size: 1.6rem;
-  border: none; }
+  border: none;
+  cursor: pointer; }
   .btn-primary {
     background-color: #f8e535;
     color: 333; }
     .btn-primary:hover {
+      opacity: 0.8; }
+  .btn-tertiary {
+    background-color: #fc2d00;
+    color: #fff;
+    padding: 5px 10px; }
+    .btn-tertiary:hover {
       opacity: 0.8; }
   .btn-nav, .btn-form {
     border: 1px #fff solid !important;
