@@ -1,0 +1,44 @@
+.signin {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    background-color: $color-form;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+
+    & p {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form {
+    & p {
+    }
+    & label,
+    & input {
+      font-size: 1.6rem;
+      display: block;
+      width: 100%;
+    }
+    & input {
+      outline: none;
+      padding: 1rem;
+    }
+  }
+
+  &__card {
+    &--footer {
+      & .btn {
+        margin-top: 2rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -282,6 +282,33 @@ html {
     padding: 5px;
     font-size: 1.6rem; }
 
+.signin {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .signin__card {
+    background-color: #00b0ff;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 4px; }
+    .signin__card p {
+      margin-bottom: 2rem; }
+  .signin__form label,
+  .signin__form input {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%; }
+  .signin__form input {
+    outline: none;
+    padding: 1rem; }
+  .signin__card--footer .btn {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff; }
+
 .btn {
   display: inline-block;
   padding: 1.2rem 1.6rem;
@@ -306,12 +333,19 @@ html {
     padding: 1rem;
     background-color: #4a3afe;
     cursor: pointer; }
+    .btn-nav.active, .btn-form.active {
+      border-color: #f8e535 !important; }
     .btn-nav:hover, .btn-form:hover {
       border-color: #f8e535 !important; }
     .btn-nav a, .btn-form a {
       color: #fff; }
   .btn-form {
     background-color: #00b0ff !important; }
+    .btn-form-secondary {
+      color: #fff;
+      text-align: center; }
+      .btn-form-secondary:hover {
+        background-color: #008ece; }
 
 .navbar__dropdown {
   position: relative; }

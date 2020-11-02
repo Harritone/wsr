@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -21,7 +20,7 @@
               <img src="img/logo.png" alt="logo" />
             </div>
             <div class="header__left--link">
-              <a href="#" class="btn btn-primary">Личный Кабинет</a>
+              <a href="lk.html" class="btn btn-primary">Личный Кабинет</a>
             </div>
           </div>
           <div class="header__center">
@@ -38,38 +37,38 @@
     </header>
 
     <nav class="resp">
-
       <div class="resp__container">
-
         <div class="resp__logo">
           <img src="img/logo.png" alt="" />
         </div>
         <div class="resp__title">
           <h2 class="heading-s">Lingua45</h2>
         </div>
-        <div class="resp__dropdown ">
+        <div class="resp__dropdown">
           <div class="resp__trigger">☰</div>
         </div>
       </div>
-          <div class="resp__navigation">
-            <div class="nav__content ">
-              <a href="#"> Личный кабинет</a>
-              <a href="#"> Пройти тест</a>
-              <a href="#"> Главная</a>
-              <a href="#"> Цены</a>
-              <div class="dropdown"><p class="dropdown__trigger navdrop__trigger">Программы <span class="dropdown__caret"><</span></p>
-              <div class="dropdown__content navdrop__content">
-                <a class="navdrop__item" href="#">Китайский язык</a>
-                <a class="navdrop__item" href="#">Английский язык</a>
-                <a class="navdrop__item" href="#">Французский язык</a>
-              </div>
-              </div>
-              
-              <a href="#"> Контакты</a>
-              <a href="#"> Блог</a>
+      <div class="resp__navigation">
+        <div class="nav__content">
+          <a href="lk.html"> Личный кабинет</a>
+          <a href="test.html"> Пройти тест</a>
+          <a href="index.html"> Главная</a>
+          <a href="prices.html"> Цены</a>
+          <div class="dropdown">
+            <p class="dropdown__trigger navdrop__trigger">
+              Программы <span class="dropdown__caret"><</span>
+            </p>
+            <div class="dropdown__content navdrop__content">
+              <a class="navdrop__item" href="chineese.html">Китайский язык</a>
+              <a class="navdrop__item" href="english.html">Английский язык</a>
+              <a class="navdrop__item" href="french.html">Французский язык</a>
             </div>
           </div>
 
+          <a href="contact.html"> Контакты</a>
+          <a href="blog.html"> Блог</a>
+        </div>
+      </div>
     </nav>
 
     <section class="showcase">
@@ -105,14 +104,16 @@
         <div class="navbar__container">
           <div class="navbar__left">
             <ul class="navbar__left--list">
-              <li class="btn btn-nav"><a href="#">Личный Кабинет</a></li>
-              <li class="btn btn-nav"><a href="#">Пройти Тест</a></li>
+              <li class="btn btn-nav"><a href="lk.html">Личный Кабинет</a></li>
+              <li class="btn btn-nav"><a href="test.html">Пройти Тест</a></li>
             </ul>
           </div>
-          <jdiv class="navbar__right">
+          <div class="navbar__right">
             <ul class="navbar__right--list">
-              <li class="btn btn-nav"><a href="#">Главная</a></li>
-              <li class="btn btn-nav"><a href="#">Цены</a></li>
+              <li class="btn btn-nav active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="btn btn-nav"><a href="prices">Цены</a></li>
               <li class="btn btn-nav dropdown navbar__dropdown">
                 <p class="dropdown__trigger navbar__dropdown__triger">
                   Программы <span class="dropdown__caret">></span>
@@ -120,19 +121,18 @@
 
                 <ul class="dropdown__content navbar__dropdown__content">
                   <li class="navbar__dropdown__content--item">
-                    <a href="#">Английский язык</a>
+                    <a href="eglish.html">Английский язык</a>
                   </li>
                   <li class="navbar__dropdown__content--item">
-                    <a href="#">Китайский язык</a>
+                    <a href="chineese.html">Китайский язык</a>
                   </li>
                   <li class="navbar__dropdown__content--item">
-                    <a href="#">Французский язык</a>
+                    <a href="french.html">Французский язык</a>
                   </li>
                 </ul>
-
               </li>
-              <li class="btn btn-nav"><a href="#">Контакты</a></li>
-              <li class="btn btn-nav"><a href="#">Блог</a></li>
+              <li class="btn btn-nav"><a href="contact.html">Контакты</a></li>
+              <li class="btn btn-nav"><a href="blog.html">Блог</a></li>
             </ul>
           </div>
         </div>
