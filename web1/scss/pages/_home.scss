@@ -58,6 +58,53 @@
   }
 }
 
+// Reponsive navbar
+.resp {
+  background-color: $color-nav;
+  padding: 1rem 3rem;
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  color: #fff;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+  &__title {
+    color: #fff;
+  }
+}
+
+.nav__content {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  text-align: left;
+
+  & a,
+  p {
+    display: block;
+    color: #fff;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $color-primary;
+      color: #333;
+    }
+  }
+}
+
 // Showcase
 
 .showcase {
@@ -237,7 +284,7 @@
 // Courses section
 
 .courses {
-  height: 60rem;
+  padding: 10rem 0;
   background: url("../img/bush.png");
 
   &__container {
@@ -261,7 +308,7 @@
 // Footer
 .footer {
   background-color: $color-nav;
-  padding: 1rem 0;
+  padding: 1rem;
 
   &__container {
     max-width: 90rem;

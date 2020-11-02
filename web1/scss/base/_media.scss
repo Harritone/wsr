@@ -1,0 +1,131 @@
+@media (max-width: 1100px) {
+  .courses {
+    &__container {
+      grid-gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .request {
+    height: 100%;
+    padding: 10rem;
+
+    &__container {
+      justify-content: center;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
+  }
+
+  .courses {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .card {
+    width: 50rem;
+  }
+
+  .flag {
+    &-3 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .resp {
+    display: block;
+  }
+
+  .flag {
+    &-1 {
+      display: none;
+    }
+  }
+
+  .request {
+    &__article {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .showcase {
+    height: 100%;
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__card img {
+      display: none;
+    }
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .carousel__flag img {
+    width: 20rem;
+  }
+
+  .request {
+    height: 100%;
+    padding: 0;
+    background-color: $color-form;
+    // padding: 3rem 0;
+
+    &__container {
+      display: block;
+    }
+
+    &::before {
+      content: none;
+    }
+    &__content {
+    }
+
+    &__form {
+      border-radius: 0;
+      width: 100%;
+    }
+    &__article {
+      display: none;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    padding: 1rem;
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+
+      & div:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
