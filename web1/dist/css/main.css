@@ -53,6 +53,9 @@ html {
 .form-group {
   margin-bottom: 2rem; }
 
+.py-2 {
+  padding: 2rem 0; }
+
 .header {
   background-color: #4a3afe; }
   .header__container {
@@ -308,6 +311,34 @@ html {
     width: 100%;
     text-align: center;
     color: #fff; }
+
+.quiz__title {
+  padding: 4rem 0;
+  text-align: center;
+  color: #00b0ff; }
+
+.quiz__result {
+  font-size: 3rem;
+  display: none; }
+  .quiz__result.active {
+    display: block; }
+
+.quiz__percent {
+  color: #00b0ff;
+  font-size: 5rem; }
+
+.quiz__container {
+  background-color: #00b0ff;
+  padding: 4rem 1rem;
+  color: #fff; }
+
+.quiz-box {
+  margin-bottom: 4rem; }
+
+.quiz__answer {
+  padding-left: 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
 
 .btn {
   display: inline-block;

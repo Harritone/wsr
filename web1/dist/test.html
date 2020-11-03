@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Linguo 24 | Тест</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__container">
+          <div class="navbar__left">
+            <ul class="navbar__left--list">
+              <li class="btn btn-nav">
+                <a href="lk.html">Личный Кабинет</a>
+              </li>
+              <li class="btn btn-nav active">
+                <a href="test.html">Пройти Тест</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar__right">
+            <ul class="navbar__right--list">
+              <li class="btn btn-nav">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="btn btn-nav"><a href="prices">Цены</a></li>
+              <li class="btn btn-nav dropdown navbar__dropdown">
+                <p class="dropdown__trigger navbar__dropdown__triger">
+                  Программы <span class="dropdown__caret">></span>
+                </p>
+
+                <ul class="dropdown__content navbar__dropdown__content">
+                  <li class="navbar__dropdown__content--item">
+                    <a href="eglish.html">Английский язык</a>
+                  </li>
+                  <li class="navbar__dropdown__content--item">
+                    <a href="chineese.html">Китайский язык</a>
+                  </li>
+                  <li class="navbar__dropdown__content--item">
+                    <a href="french.html">Французский язык</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="btn btn-nav"><a href="contact.html">Контакты</a></li>
+              <li class="btn btn-nav"><a href="blog.html">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="resp">
+      <div class="resp__container">
+        <div class="resp__logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="resp__title">
+          <h2 class="heading-s">Lingua45</h2>
+        </div>
+        <div class="resp__dropdown">
+          <div class="resp__trigger">☰</div>
+        </div>
+      </div>
+      <div class="resp__navigation">
+        <div class="nav__content">
+          <a href="lk.html"> Личный кабинет</a>
+          <a href="test.html"> Пройти тест</a>
+          <a href="index.html"> Главная</a>
+          <a href="prices.html"> Цены</a>
+          <div class="dropdown">
+            <p class="dropdown__trigger navdrop__trigger">
+              Программы <span class="dropdown__caret"><</span>
+            </p>
+            <div class="dropdown__content navdrop__content">
+              <a class="navdrop__item" href="chineese.html">Китайский язык</a>
+              <a class="navdrop__item" href="english.html">Английский язык</a>
+              <a class="navdrop__item" href="french.html">Французский язык</a>
+            </div>
+          </div>
+
+          <a href="contact.html"> Контакты</a>
+          <a href="blog.html"> Блог</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="quiz">
+      <div class="container">
+          <div class="quiz__title">
+            <h2 class="heading-l">Ответьте на вопросы</h2>
+          </div>
+          <div class="quiz__result text-center py-2">
+            Ваш результат: <span class="quiz__percent">0%</span>
+          </div>
+      </div>
+      <div class="quiz__container">
+        <div class="container">
+
+          <div class="quiz__form">
+            <form id="quiz">
+              <div class="quiz-box">
+                <div class="quiz__question">
+                  <h2 class="heading-m">
+                    1. She is really ___ my nerves. She thinks she knows
+                    everything!
+                  </h2>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q1" value="A" checked />
+                  <label class="form-check-label">taking away</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q1" value="B" />
+                  <label class="form-check-label">putting on</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q1" value="C" />
+                  <label class="form-check-label">getting on</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q1" value="D" />
+                  <label class="form-check-label">getting through</label>
+                </div>
+              </div>
+
+              <div class="quiz-box">
+                <div class="quiz__question">
+                  <h2 class="heading-m">
+                    2. Выбери формулировку, в которой НЕ говорится о будущем.
+                  </h2>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q2" value="A" checked />
+                  <label class="form-check-label">He is not here yet</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q2" value="B" />
+                  <label class="form-check-label"
+                    >We are about to have lunch</label
+                  >
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q2" value="C" />
+                  <label class="form-check-label"
+                    >Our flight is due to take off at midnight</label
+                  >
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q2" value="D" />
+                  <label class="form-check-label"
+                    >The president is to visit this country in April</label
+                  >
+                </div>
+              </div>
+
+              <div class="quiz-box">
+                <div class="quiz__question">
+                  <h2 class="heading-m">3. You’d better not ___ tonight.</h2>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q3" value="A" checked />
+                  <label class="form-check-label">going out</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q3" value="B" />
+                  <label class="form-check-label">goes out</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q3" value="C" />
+                  <label class="form-check-label">go out</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q3" value="D" />
+                  <label class="form-check-label">to go out</label>
+                </div>
+              </div>
+
+              <div class="quiz-box">
+                <div class="quiz__question">
+                  <h2 class="heading-m">
+                    4. He is so ___. He thinks he is better and more important
+                    than all other people.
+                  </h2>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q4" value="A" checked />
+                  <label class="form-check-label">arrogant</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q4" value="B" />
+                  <label class="form-check-label">sensetive</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q4" value="C" />
+                  <label class="form-check-label">contented</label>
+                </div>
+                <div class="quiz__answer">
+                  <input type="radio" name="q4" value="D" />
+                  <label class="form-check-label">aggressive</label>
+                </div>
+              </div>
+              <input type="submit" class="btn btn-primary" value="Отправить">
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__address">Хабаровск, Дзержинского 24</div>
+        <div class="footer__copy">&copy;Все права защищены, 2020</div>
+        <div class="footer__form">
+          <form>
+            <input type="email" name="email" />
+            <input type="submit" value="Подписаться" class="btn btn-tertiary" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.quiz {
+  &__title {
+    padding: 4rem 0;
+    text-align: center;
+    color: $color-form;
+  }
+
+  &__result {
+    font-size: 3rem;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__percent {
+    color: $color-form;
+    font-size: 5rem;
+  }
+
+  &__container {
+    background-color: $color-form;
+    padding: 4rem 1rem;
+    color: #fff;
+  }
+
+  &-box {
+    margin-bottom: 4rem;
+  }
+
+  &__answer {
+    padding-left: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
