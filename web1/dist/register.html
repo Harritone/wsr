@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Linguo 24 | Вход</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__container">
+          <div class="navbar__left">
+            <ul class="navbar__left--list">
+              <li class="btn btn-nav active">
+                <a href="lk.html">Личный Кабинет</a>
+              </li>
+              <li class="btn btn-nav"><a href="test.html">Пройти Тест</a></li>
+            </ul>
+          </div>
+          <div class="navbar__right">
+            <ul class="navbar__right--list">
+              <li class="btn btn-nav">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="btn btn-nav"><a href="prices">Цены</a></li>
+              <li class="btn btn-nav dropdown navbar__dropdown">
+                <p class="dropdown__trigger navbar__dropdown__triger">
+                  Программы <span class="dropdown__caret">></span>
+                </p>
+
+                <ul class="dropdown__content navbar__dropdown__content">
+                  <li class="navbar__dropdown__content--item">
+                    <a href="index.html#courses">Английский язык</a>
+                  </li>
+                  <li class="navbar__dropdown__content--item">
+                    <a href="index.html#courses">Китайский язык</a>
+                  </li>
+                  <li class="navbar__dropdown__content--item">
+                    <a href="index.html#courses">Французский язык</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="btn btn-nav">
+                <a href="index.html#contact">Контакты</a>
+              </li>
+              <li class="btn btn-nav"><a href="blog.html">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="resp">
+      <div class="resp__container">
+        <div class="resp__logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="resp__title">
+          <h2 class="heading-s">Lingua45</h2>
+        </div>
+        <div class="resp__dropdown">
+          <div class="resp__trigger">☰</div>
+        </div>
+      </div>
+      <div class="resp__navigation">
+        <div class="nav__content">
+          <a href="lk.html"> Личный кабинет</a>
+          <a href="test.html"> Пройти тест</a>
+          <a href="index.html"> Главная</a>
+          <a href="prices.html"> Цены</a>
+          <div class="dropdown">
+            <p class="dropdown__trigger navdrop__trigger">
+              Программы <span class="dropdown__caret"><</span>
+            </p>
+            <div class="dropdown__content navdrop__content">
+              <a class="navdrop__item" href="index.html#courses"
+                >Китайский язык</a
+              >
+              <a class="navdrop__item" href="index.html#courses"
+                >Английский язык</a
+              >
+              <a class="navdrop__item" href="index.html#courses"
+                >Французский язык</a
+              >
+            </div>
+          </div>
+
+          <a href="index.html#contact"> Контакты</a>
+          <a href="blog.html"> Блог</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="signin">
+        <div class="signin__card">
+          <h2 class="heading-l">Зарегестрироваться</h2>
+          <p>Пожалуйста заполните поля чтобы Зарегестрироваться</p>
+          <div class="signin__form">
+            <form>
+              <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Имя:</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+              <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="form-group">
+                <label for="password_confirm">Пароль ещё раз:</label>
+                <input
+                  type="password_confirm"
+                  name="password_confirm"
+                  id="password_confirm"
+                />
+              </div>
+              <div class="signin__card--footer">
+                <input
+                  class="btn btn-primary"
+                  type="submit"
+                  value="Зарегестрироваться"
+                />
+                <a href="lk.html" class="btn btn-form-secondary">Войти</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__address">Хабаровск, Дзержинского 24</div>
+        <div class="footer__copy">&copy;Все права защищены, 2020</div>
+        <div class="footer__form">
+          <form>
+            <input type="email" name="email" />
+            <input type="submit" value="Подписаться" class="btn btn-tertiary" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
