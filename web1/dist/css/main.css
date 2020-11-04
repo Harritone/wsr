@@ -37,7 +37,8 @@ a {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 .container {
   max-width: 108rem;
@@ -339,6 +340,12 @@ html {
   padding-left: 2rem;
   font-size: 2rem;
   margin-bottom: 2rem; }
+
+.article__title {
+  padding: 2rem 0; }
+
+.article__text {
+  padding: 2rem; }
 
 .btn {
   display: inline-block;
